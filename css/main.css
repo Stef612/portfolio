@@ -1,21 +1,26 @@
 /*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 
+
 /* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+
+
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
 
+
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
 
 html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
 }
+
 
 /*
  * Remove text-shadow in selection highlight:
@@ -28,27 +33,29 @@ html {
  */
 
 ::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
+    background: #b3d4fc;
+    text-shadow: none;
 }
 
 ::selection {
-  background: #b3d4fc;
-  text-shadow: none;
+    background: #b3d4fc;
+    text-shadow: none;
 }
+
 
 /*
  * A better looking default horizontal rule
  */
 
 hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
 }
+
 
 /*
  * Remove the gap between audio, canvas, iframes,
@@ -62,849 +69,985 @@ iframe,
 img,
 svg,
 video {
-  vertical-align: middle;
+    vertical-align: middle;
 }
+
 
 /*
  * Remove default fieldset styles.
  */
 
 fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
+    border: 0;
+    margin: 0;
+    padding: 0;
 }
+
 
 /*
  * Allow only vertical resizing of textareas.
  */
 
 textarea {
-  resize: vertical;
+    resize: vertical;
 }
+
 
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
-
-
-
-
 body {
-  width: 100%;
-  height: 100%;
-  left:0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  font-family: 'Oxanium', cursive;
-  background: linear-gradient(45deg, #ff2400, #e81d1d, orange,#e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3,#ff2400, #e81d1d, orange,#e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
-  background-repeat: repeat-x;
-  background-size: 500% 500%;  
-  -webkit-animation: rainbow 18s ease infinite;
-  -z-animation: rainbow 18s ease infinite;
-  -o-animation: rainbow 18s ease infinite;
-  animation: rainbow 18s ease infinite;}
-  
-  @-webkit-keyframes rainbow {
-      0%{background-position:0% 82%}
-      50%{background-position:100% 19%}
-      100%{background-position:0% 82%}
-  }
-  @-moz-keyframes rainbow {
-      0%{background-position:0% 82%}
-      50%{background-position:100% 19%}
-      100%{background-position:0% 82%}
-  }
-  @-o-keyframes rainbow {
-      0%{background-position:0% 82%}
-      50%{background-position:100% 19%}
-      100%{background-position:0% 82%}
-  }
-  @keyframes rainbow { 
-      0%{background-position:0% 82%}
-      50%{background-position:100% 19%}
-      100%{background-position:0% 82%}
-}
-/*************************************** * HEADER * ***************************************/
-.non-mobile{display: hidden;}
-header{
-    display: flex;
-    align-items: center ;
-    justify-content: center;    
-    flex-flow: row wrap;    
-    width:100%;
+    width: 100%;
     height: 100%;
-    margin-top: 6px;    
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    font-family: 'Oxanium', cursive;
+    background: linear-gradient(45deg, #ff2400, #e81d1d, orange, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3, #ff2400, #e81d1d, orange, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+    background-repeat: repeat-x;
+    background-size: 500% 500%;
+    -webkit-animation: rainbow 18s ease infinite;
+    -z-animation: rainbow 18s ease infinite;
+    -o-animation: rainbow 18s ease infinite;
+    animation: rainbow 18s ease infinite;
 }
-.tablet-desktop{display: none;}
-.top-half{
+
+@-webkit-keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+    50% {
+        background-position: 100% 19%
+    }
+    100% {
+        background-position: 0% 82%
+    }
+}
+
+@-moz-keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+    50% {
+        background-position: 100% 19%
+    }
+    100% {
+        background-position: 0% 82%
+    }
+}
+
+@-o-keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+    50% {
+        background-position: 100% 19%
+    }
+    100% {
+        background-position: 0% 82%
+    }
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+    50% {
+        background-position: 100% 19%
+    }
+    100% {
+        background-position: 0% 82%
+    }
+}
+
+
+/*************************************** * HEADER * ***************************************/
+
+.non-mobile {
+    display: hidden;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 100%;
+    margin-top: 6px;
+}
+
+.tablet-desktop {
+    display: none;
+}
+
+.top-half {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
 }
-.above-logo{
+
+.above-logo {
     width: 100%;
     height: 24px;
     background-color: #1f1f1ff2;
     border-top-left-radius: 10px 10px;
     border-top-right-radius: 10px 10px;
 }
-.logo{
+
+.logo {
     width: 100%;
     display: flex;
-    align-items:auto;
-    justify-content:center;
+    align-items: auto;
+    justify-content: center;
     flex-flow: row wrap;
 }
-.side-logo{
+
+.side-logo {
     width: 2.75%;
     background-color: #1f1f1ff2;
 }
-.inner-logo{
+
+.inner-logo {
     width: 94.5%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.inner-logo img{
+
+.inner-logo img {
     width: 100%;
     opacity: 0.95;
 }
-header .half{
+
+header .half {
     display: flex;
-    align-items: center ;
-    justify-content: center;  
+    align-items: center;
+    justify-content: center;
     color: mintcream;
-    width:100%;
-    margin:0px 6px;
+    width: 100%;
+    margin: 0px 6px;
 }
+
 nav {
     width: 100%;
     list-style-type: none;
     display: flex;
     align-items: auto;
     justify-content: center;
-    flex-flow:row wrap ;
+    flex-flow: row wrap;
     margin: 0;
 }
-.top-nav{
+
+.top-nav {
     width: 100%;
-    height:30px;
+    height: 30px;
     background-color: #1f1f1ff2;
 }
-.left-nav-side{
+
+.left-nav-side {
     width: 3%;
     background-color: #1f1f1ff2;
 }
-.right-nav-side{
+
+.right-nav-side {
     width: 7%;
     background-color: #1f1f1ff2;
 }
-.nav-middle{
+
+.nav-middle {
     width: 7.5%;
     background-color: #1f1f1ff2;
 }
-.nav-icon{
+
+.nav-icon {
     width: 25%;
 }
-.nav-icon img{
+
+.nav-icon img {
     display: flex;
     width: 100%;
     opacity: 0.95;
-    
 }
-.bottom-nav{
+
+.bottom-nav {
     width: 100%;
-    height:12px;
+    height: 18px;
     background: #1f1f1ff2;
 }
-.nav-icon img:hover{
+
+.nav-icon img:hover {
     transition-duration: 0.25s;
     background: white
 }
+
+
 /*************************************** * HEADER * ***************************************/
 
+
 /*************************************** * ABOUT * ****************************************/
-.secret-pic{display: none;}
+
+.secret-pic {
+    display: none;
+}
+
 .about {
     display: flex;
-    align-items: center ;
-    justify-content: center;    
-    flex-flow: row wrap;    
-    width:100%;    
-    
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    width: 100%;
 }
-.about p{
+
+.about p {
     text-align: justify;
     text-justify: inter-word;
 }
-.about .half{    
-    width:100%;
-    margin:0px 6px;
-    color:white;
+
+.about .half {
+    width: 100%;
+    margin: 0px 6px;
+    color: white;
 }
+
 .about .half1 {
-    background-color:rgb(48, 48, 48,0.92);
-    padding:0 24px;
+    background-color: rgb(48, 48, 48, 0.92);
+    padding: 0 24px;
 }
-.half2{
+
+.half2 {
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: center;
-    flex-flow: row wrap;    
-    width:100%;
+    flex-flow: row wrap;
+    width: 100%;
     height: 100%;
 }
-.pic{
+
+.pic {
     display: flex;
     width: 100%;
-    border-top-width:12px;
-    border-bottom-width:12px;
-    border-color: rgb(31, 31, 31,0.95);
+    border-top-width: 12px;
+    border-bottom-width: 12px;
+    border-color: rgb(31, 31, 31, 0.95);
     border-style: solid;
-    border-bottom:none;
+    border-bottom: none;
 }
-.right{
-    width:10%;
-    background-color: rgb(31, 31, 31,0.95);
+
+.right {
+    width: 10%;
+    background-color: rgb(31, 31, 31, 0.95);
 }
-.left{
-    width:10%;
-    background-color: rgb(31, 31, 31,0.95);
+
+.left {
+    width: 10%;
+    background-color: rgb(31, 31, 31, 0.95);
 }
-.pic1{
-    width:80%;
-     
+
+.pic1 {
+    width: 80%;
 }
-.pic1 img{
+
+.pic1 img {
     display: flex;
     width: 100%;
 }
-.bellow{
-    height:12px;
-    background: rgb(31, 31, 31,0.95); 
-    width:100%;
+
+.bellow {
+    height: 12px;
+    background: rgb(31, 31, 31, 0.95);
+    width: 100%;
 }
+
+
 /*************************************** * ABOUT * ****************************************/
+
 
 /*************************************** * SKILLZ * ***************************************/
 
-.skillz{
-    width:100%;
+.skillz {
+    width: 100%;
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: center;
-    flex-flow:row wrap;
-    
+    flex-flow: row wrap;
 }
-.skillz h2{
-    width:100%;
+
+.skillz h2 {
+    width: 100%;
     color: white;
     text-align: center;
-    margin:0px 6px;
-    background: rgb(48, 48, 48,0.92); 
-    padding:16px 0;
+    margin: 0px 6px;
+    background: rgb(48, 48, 48, 0.92);
+    padding-top: 24px;
+    padding-bottom: 18px;
 }
-.skillz-pngs{
-    width:100%;
+
+.skillz-pngs {
+    width: 100%;
     display: flex;
-    align-items:auto;
+    align-items: auto;
     justify-content: center;
-    flex-flow:row wrap;
-    margin:0px 6px;
+    flex-flow: row wrap;
+    margin: 0px 6px;
 }
 
-.skillz-icon-sides{
-    width:10%;
-    background: rgb(48, 48, 48,0.92); 
-}
-.skillz-icon-inbetweens{
-    width:10%;
-    background: rgb(48, 48, 48,0.92); 
+.skillz-icon-sides {
+    width: 10%;
+    background: rgb(48, 48, 48, 0.92);
 }
 
-.skillz img{
+.skillz-icon-inbetweens {
+    width: 10%;
+    background: rgb(48, 48, 48, 0.92);
+}
+
+.skillz img {
     width: 20%;
     display: flex;
     opacity: 92%;
 }
-.skillz-padding{
-    width:100%;
-    height:16px;
-    background: rgb(48, 48, 48,0.92); 
+
+.skillz-padding {
+    width: 100%;
+    height: 16px;
+    background: rgb(48, 48, 48, 0.92);
 }
-.skillz-in-about{
+
+.skillz-in-about {
     display: none;
 }
-.skillz2{
+
+.skillz2 {
     display: none;
 }
+
+
 /*************************************** * SKILLZ * ***************************************/
 
+
 /************************************** * PROJECTS * **************************************/
-.projects{
-    width:100%;
+
+.projects {
+    width: 100%;
     color: white;
     display: flex;
-    align-items:center ;
-    justify-content:center ;
-    flex-flow: row wrap;
-    
-}
-.projects-borders{
-    
-    width:100%;
-    
-    display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     flex-flow: row wrap;
+}
 
-}
-.projects h2{
+.projects-borders {
     width: 100%;
-    
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.projects h2 {
+    width: 100%;
     text-align: center;
-    padding: 16px 0;
+    padding-top: 24px;
+    padding-bottom: 18px;
+    margin: 0;
 }
-.desktop-fix-projects{
-    background: rgb(31, 31, 31,0.95); 
-    margin:0 6px;
+
+.desktop-fix-projects {
+    background: rgb(31, 31, 31, 0.95);
+    margin: 0 6px;
 }
-.project{
+
+.project {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
     width: 100%;
-    margin:0px 18px;    
-    border-radius: 15px 15px;   
+    margin: 0px 18px;
+    border-radius: 15px 15px;
     margin-bottom: 16px;
 }
-.top-part{
-    width:100%;
+
+.top-part {
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-flow:row wrap;
+    flex-flow: row wrap;
 }
-.top-part a{
+
+.top-part a {
     font-size: 18px;
     font-weight: bold;
 }
-.unplugged{
+
+.unplugged {
     border: 2px solid darkgreen;
     background-image: url(../img/unplugged-retreat.jpg);
     background-position: center;
-    background-size:cover ;
+    background-size: cover;
 }
-.unplugged a{
+
+.unplugged a {
     color: darkgreen;
 }
-.guess{
+
+.guess {
     border: 2px solid lightblue;
     background-image: url(../img/guess.png);
     background-position: center;
-    background-size:cover ;
+    background-size: cover;
 }
-.guess a{
+
+.guess a {
     color: lightblue;
 }
-.note{
+
+.note {
     border: 2px solid lightgoldenrodyellow;
-    background-image: url(../img/note.jpg);
+    background-image: url(../img/note.png);
     background-position: center;
-    background-size:cover ;
+    background-size: cover;
 }
-.note a{
+
+.note a {
     color: lightgoldenrodyellow;
 }
-.gallery{
+
+.gallery {
     border: 2px solid pink;
     background-image: url(../img/gallery.jpg);
     background-position: center;
-    background-size:cover ;
+    background-size: cover;
 }
-.gallery a{
+
+.gallery a {
     color: pink;
 }
+
 .project h3 {
     text-align: center;
 }
+
 .project p {
     text-align: center;
     margin: 5%;
 }
-.project article{
+
+.project article {
     width: 100%;
 }
+
+
 /************************************** * PROJECTS * **************************************/
+
 
 /************************************** * CONTACT * ***************************************/
 
-.contact{    
+.contact {
     margin-top: 0;
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    flex-flow: row wrap;  
-    width:100%;
-    color: white;
-}
-.contact h2{
-    margin:0%;
-    width:100%;
-    margin:0px 6px;
-    text-align: center;
-    background-color: rgb(48, 48, 48,0.92);
-    padding-top: 12px;
-}
-.contact .half{
-    width:100%;
-    margin:0px 6px;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-flow: column;  
+    flex-flow: row wrap;
+    width: 100%;
+    color: white;
 }
-.bottom-half h3{
+
+.contact h2 {
+    margin: 0%;
+    width: 100%;
+    margin: 0px 6px;
+    text-align: center;
+    background-color: rgb(48, 48, 48, 0.92);
+    padding-top: 24px;
+    padding-bottom: 18px;
+}
+
+.contact .half {
+    width: 100%;
+    margin: 0px 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.bottom-half h3 {
     text-align: center;
     width: 100%;
-    background-color: rgb(48, 48, 48,0.92);
+    background-color: rgb(48, 48, 48, 0.92);
     margin: 0;
     padding: 20px 0;
 }
-.half3{
-    background-color: rgb(48, 48, 48,0.92);
+
+.half3 {
+    background-color: rgb(48, 48, 48, 0.92);
 }
+
 .contact a {
     color: limegreen;
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
 }
+
 .contact a:hover {
     font-size: 20px;
-    }
+}
+
 .contact p {
     font-size: 18px;
 }
 
-.follow-icons{
+.follow-icons {
     display: flex;
-    align-items:auto;
-    justify-content:center;
+    align-items: auto;
+    justify-content: center;
     flex-flow: row wrap;
-    width: 100%;    
+    width: 100%;
     margin: 0;
-    padding-bottom: 0; 
+    padding-bottom: 0;
 }
-.side{
+
+.side {
     width: 31.25%;
     background-color: #303030EB;
 }
-.center{
-    width:12.5%;
-    background-color: rgb(48, 48, 48,0.92);
+
+.center {
+    width: 12.5%;
+    background-color: rgb(48, 48, 48, 0.92);
 }
-.icon{
+
+.icon {
     width: 12.5%;
 }
-.icon img{
+
+.icon img {
     width: 100%;
-    display: flex;    
+    display: flex;
     opacity: 0.92;
 }
-.bottom-half .fix-border{
-    width:100%;    
+
+.bottom-half .fix-border {
+    width: 100%;
     border-bottom-left-radius: 30px 30px;
     border-bottom-right-radius: 30px 30px;
-    background-color: rgb(48, 48, 48,0.92);
-    margin:0;
-    height:10px;
-    color:rgb(48, 48, 48,0.92);;
+    background-color: rgb(48, 48, 48, 0.92);
+    margin: 0;
+    height: 10px;
+    color: rgb(48, 48, 48, 0.92);
+    ;
 }
-.icon img:hover{
+
+.icon img:hover {
     transition-duration: 0.25s;
     background-color: white;
 }
-.contact2{
+
+.contact2 {
     display: none;
 }
+
+
 /************************************** * CONTACT * ***************************************/
 
+
 /************************************** * FOOTER * ****************************************/
-footer{
-    text-align: center; 
+
+footer {
+    text-align: center;
 }
-footer p{
-    margin: 0%; 
+
+footer p {
+    margin: 0%;
 }
+
+
 /************************************** * FOOTER * ****************************************/
+
 
 /****************************************************************************************** * TABLET * ******************************************************************************************/
 
 @media only screen and (min-width:768px) {
+    /*************************************** * HEADER * ***************************************/
+    .inner-logo {
+        width: 70%;
+    }
+    .side-logo {
+        width: 15%;
+    }
+    .nav-icon {
+        width: 15%;
+    }
+    .right-nav-side {
+        width: 22%;
+    }
+    .left-nav-side {
+        width: 18%
+    }
+    .bottom-nav {
+        height: 24px;
+    }
+    /*************************************** * HEADER * ***************************************/
+    /*************************************** * ABOUT * ****************************************/
+    .about-top {
+        background-color: rgb(48, 48, 48, 0.92);
+        width: 100%;
+        height: 54px;
+        margin: 0 6px;
+    }
+    .about .half2 {
+        display: none;
+    }
+    .secret-pic {
+        display: initial;
+        border: 3px solid greenyellow;
+        max-width: 40%;
+        max-height: 350px;
+        height: auto;
+        border-radius: 15px 15px;
+        margin-bottom: 30px;
+    }
+    .about .half1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: row wrap;
+        padding: 0;
+    }
+    .half1-text {
+        width: 60%;
+    }
+    .half1-text p {
+        text-justify: none;
+        padding-right: 5px;
+    }
+    .about h1 {
+        margin: 0;
+        padding: 0;
+    }
+    .about-bellow {
+        width: 100%;
+        height: 24px;
+        background: rgb(48, 48, 48, 0.92);
+        margin: 0 6px;
+    }
+    /*************************************** * ABOUT * ****************************************/
+    /*************************************** * SKILLZ * ***************************************/
+    .skillz1 {
+        display: none;
+        background-color: crimson;
+    }
+    .skillz2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: row wrap;
+        width: 100%;
+    }
+    .skillz2 h2 {
+        background: #1f1f1ff2;
+        padding-top: 36px;
+        padding-bottom: 24px;
+    }
+    .skillz2 .skillz-pngs1 {
+        width: 100%;
+        display: flex;
+        align-items: auto;
+        justify-content: center;
+        flex-flow: row wrap;
+        margin: 0 6px;
+    }
+    .skillz2 img {
+        width: 12.5%;
+        opacity: 95%;
+    }
+    .skillz-icon-inbetweens1 {
+        width: 5%;
+        background: #1f1f1ff2;
+        ;
+    }
+    .skillz-icon-sides1 {
+        width: 8.75%;
+        background: #1f1f1ff2;
+    }
+    .space-between-skillz {
+        background-color: #1f1f1ff2;
+        margin: 0 6px;
+        width: 100%;
+        height: 18px
+    }
+    .skillz2 .skillz-pngs2 {
+        width: 100%;
+        display: flex;
+        align-items: auto;
+        justify-content: center;
+        flex-flow: row wrap;
+        margin: 0 6px;
+    }
+    .skillz-icon-inbetweens2 {
+        width: 5%;
+        background: #1f1f1ff2;
+    }
+    .skillz-icon-sides2 {
+        width: 17.5%;
+        background: #1f1f1ff2;
+    }
+    .skillz2 .skillz-padding {
+        background: #1f1f1ff2;
+    }
+    .bottom-skillz-padding {
+        background-color: #1f1f1ff2;
+        margin: 0 6px;
+        width: 100%;
+        height: 30px
+    }
+    /*************************************** * SKILLZ * ***************************************/
+    /************************************** * PROJECTS * **************************************/
+    .projects h2 {
+        background: none;
+        margin: 0;
+        padding-top: 36px;
+        padding-bottom: 24px;
+    }
+    .projects-borders {
+        background: none;
+        margin: 0;
+    }
+    .project {
+        width: 40%;
+    }
+    .top-part {
+        flex-flow: column;
+    }
+    .project a {
+        width: 40%;
+        text-align: center;
+        border-radius: 4px 4px;
+        background-color: rgb(31, 31, 31, 0.5);
+    }
+    .desktop-fix-projects {
+        margin: 0 6px;
+        background-color: rgb(48, 48, 48, 0.95);
+        padding-bottom: 30px;
+    }
+    /*************************************** * PROJECTS * ****************************************/
+    /*************************************** * CONTACT * *****************************************/
+    .contact {
+        display: none;
+    }
+    .contact2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: row wrap;
+        color: whitesmoke;
+    }
+    .contact2 h2 {
+        width: 100%;
+        background: #1f1f1ff2;
+        text-align: center;
+        margin: 0 6px;
+        padding-top: 36px;
+        padding-bottom: 24px;
+    }
+    .contact2 .contact-content {
+        width: 100%;
+        margin: 0 6px;
+        display: flex;
+        align-items: auto;
+        justify-content: center;
+        flex-flow: row wrap;
+    }
+    .contact-content .half {
+        width: 50%;
+        text-align: center;
+    }
+    .contact-content .half h3 {
+        margin: 0;
+        padding: 16px;
+    }
+    .contact-content .half1 {
+        background-color: #1f1f1ff2;
+    }
+    .contact-content .half2 {
+        display: flex;
+        align-items: auto;
+        justify-content: center;
+        flex-flow: row wrap;
+    }
+    .contact-content .half2 h3 {
+        width: 100%;
+        background: #1f1f1ff2;
+        margin: 0;
+    }
+    .contact-content .follow-icons-border-fix {
+        width: 100%;
+        height: 48px;
+        background: #1f1f1ff2;
+    }
+    .contact2 a {
+        color: limegreen;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .side {
+        width: 29.5%;
+        background: #1f1f1ff2;
+    }
+    .center {
+        width: 13%;
+        background: #1f1f1ff2;
+    }
+    .icon {
+        width: 14%;
+    }
+    .icon img {
+        opacity: 95%;
+    }
+    .contact2-bottom {
+        width: 100%;
+        border-bottom-left-radius: 10px 10px;
+        border-bottom-right-radius: 10px 10px;
+        height: 30px;
+        margin: 0 6px;
+        background: #1f1f1ff2;
+    }
+    /**************************************** * CONTACT * *****************************************/
+}
 
-/*************************************** * HEADER * ***************************************/
-.inner-logo{
-    width:70%;
-}
-.side-logo{
-    width:15%;
-}
-.nav-icon{
-    width:15%;
-}
-.right-nav-side{
-    width:22%;
-}
-.left-nav-side{
-    width:18%
-}
-/*************************************** * HEADER * ***************************************/
 
-/*************************************** * ABOUT * ****************************************/
-.about-top{
-    background-color:rgb(48, 48, 48,0.92);
-    width:100%;
-    height  :32px;
-    margin: 0 6px;
-}
-.about .half2{display: none;}
-.secret-pic{
-    display: initial;
-    border: 3px solid greenyellow;;
-    max-width: 40%;
-    max-height: 350px;
-    height: auto;
-    border-radius: 15px 15px;   
-}
-.about .half1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: row wrap;
-    padding: 0;
-}
-.half1-text{
-    width: 60%;
-}
-.half1-text p{
-    text-justify: none;
-    padding-right: 5px;
-}
-.about h1{
-    margin:0;
-    padding:0;
-}
-.about-bellow{
-    width: 100%;
-    height: 24px;
-    background:rgb(48, 48, 48,0.92) ;
-    margin:0 6px;
-}
-/*************************************** * ABOUT * ****************************************/
-
-/*************************************** * SKILLZ * ***************************************/
-.skillz1{
-    display: none;
-    background-color: crimson;}
-.skillz2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: row wrap;
-    width: 100%;
-}
-.skillz2 h2{
-    background: #1f1f1ff2;
-}
-.skillz2 .skillz-pngs1{
-    width:100%;
-    display: flex;
-    align-items: auto;
-    justify-content: center;
-    flex-flow: row wrap;
-    margin:0 6px;
-}
-.skillz2 img{
-    width:12.5%;
-    opacity:95%;
-}
-.skillz-icon-inbetweens1{
-    width: 5%;
-    background:#1f1f1ff2;;
-}
-.skillz-icon-sides1{
-    width:8.75%;
-    background:#1f1f1ff2;;
-}
-.skillz2 .skillz-pngs2{
-    width:100%;
-    display: flex;
-    align-items: auto;
-    justify-content: center;
-    flex-flow: row wrap;
-    margin:0 6px;
-}
-.skillz-icon-inbetweens2{
-    width: 5%;
-    background:#1f1f1ff2;
-}
-.skillz-icon-sides2{
-    width:17.5%;
-    background:#1f1f1ff2;
-}
-.skillz2 .skillz-padding{
-    background:#1f1f1ff2;
-}
-/*************************************** * SKILLZ * ***************************************/
-
-/************************************** * PROJECTS * **************************************/
-.projects h2{
-    background: none;
-    margin: 0;
-}
-.projects-borders{
-    background: none;
-    margin: 0;
-}
-.project{
-    width: 40%;
-}
-.project a{
-    width: 100%;
-    text-align: center;
-}
-.desktop-fix-projects{
-    margin:0 6px;
-    background-color:rgb(48, 48, 48,0.95);;
-}
-/*************************************** * PROJECTS * ****************************************/
-
-/*************************************** * CONTACT * *****************************************/
-.contact{
-    display: none;
-}
-.contact2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: row wrap;
-    color: whitesmoke;
-    
-}
-.contact2 h2{
-    width: 100%;
-    background:#1f1f1ff2;
-    text-align: center;
-    margin:0 6px;
-    padding:16px 0;
-}
-.contact2 .contact-content{
-    width: 100%;
-    margin: 0 6px;
-    display: flex;
-    align-items: auto;
-    justify-content: center;
-    flex-flow:row wrap ;
-}
-.contact-content .half{
-    width:50%;
-    text-align:center ;
-}
-.contact-content .half h3{
-    margin: 0;
-    padding: 16px;
-}
-.contact-content .half1{
-    background-color: #1f1f1ff2;
-}
-.contact-content .half2{
-    display: flex;
-    align-items: auto;
-    justify-content: center;
-    flex-flow:row wrap ;
-}
-.contact-content .half2 h3{
-    width: 100%;
-    background: #1f1f1ff2;
-    margin: 0;
-}
-.contact-content .follow-icons-border-fix{
-    width:100%;
-    height: 48px;
-    background: #1f1f1ff2;
-}
-.contact2 a {
-    color: limegreen;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-}
-.side{
-    width:29.5%;
-    background: #1f1f1ff2;
-}
-.center{
-    width: 13%;
-    background: #1f1f1ff2;
-}
-.icon{
-    width:14%;
-}
-.icon img{
-    opacity: 95%;
-}
-.contact2-bottom{
-    width:100%;
-    border-bottom-left-radius: 10px 10px;
-    border-bottom-right-radius: 10px 10px;
-    height:30px;
-    margin:0 6px;
-    background: #1f1f1ff2;
-}
-/**************************************** * CONTACT * *****************************************/
-}
 /****************************************************************************************** * TABLET * ******************************************************************************************/
 
+
 /****************************************************************************************** * DESKTOP * *****************************************************************************************/
+
 @media only screen and (min-width: 1200px) {
     /*************************************** * HEADER * ***************************************/
-    .inner-logo{
-        width:65%;
+    .inner-logo {
+        width: 65%;
     }
-    .side-logo{
-        width:17.5%;
+    .side-logo {
+        width: 17.5%;
     }
-    .nav-icon{
-        width:10%;
+    .nav-icon {
+        width: 10%;
     }
-    .right-nav-side{
-        width:30.5%;
+    .right-nav-side {
+        width: 30.5%;
     }
-    .left-nav-side{
-        width:29.5%
+    .left-nav-side {
+        width: 29.5%
     }
-    .nav-middle{
-        width:5%;
+    .nav-middle {
+        width: 5%;
     }
     /*************************************** * HEADER * ***************************************/
-
     /*************************************** * ABOUT * ****************************************/
-.half1-text{
-    width: 48%;
-}
-.half1-text p{
-    text-justify: none;
-    padding-right: 5px;
-}
-.about h1{
-    margin:0;
-    padding:0;
-}
-.about-bellow{
-    width: 100%;
-    height: 24px;
-    background:rgb(48, 48, 48,0.92) ;
-    margin:0 6px;
-}
-/*************************************** * ABOUT * ****************************************/
-
-/*************************************** * SKILLZ * ***************************************/
-.skillz2 img{
-    width:9%;    
-}
-.skillz-icon-inbetweens1{
-    width: 5%;
-}
-.skillz-icon-sides1{
-    width:17.5%;
-}
-.skillz-icon-inbetweens2{
-    width: 5%;
-}
-.skillz-icon-sides2{
-    width:24.5%;
-}
-/*************************************** * SKILLZ * ***************************************/
-
-/************************************** * PROJECTS * **************************************/
-.projects{
-    width:100%;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: row wrap;    
-}
-.desktop-fix-projects{
-    width:100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: row wrap;
-}
-.desktop-fix-projects h2{
-    width:100%;
-}
-.projects-borders{
-    width:85%
-}
-/************************************** * PROJECTS * **************************************/
-
-/************************************** * CONTACT * ***************************************/
-.contact-content{
-    align-items: auto;
-}
-.contact-content .half{
-    width:40%;
-    text-align:center ;    
-    
-}
-.desk-contact-fix{
-    width:10%;
-    background: #1f1f1ff2;
+    .half1-text {
+        width: 48%;
+    }
+    .half1-text p {
+        text-justify: none;
+        padding-right: 5px;
+    }
+    .about h1 {
+        margin: 0;
+        padding: 0;
+    }
+    .about-bellow {
+        width: 100%;
+        height: 24px;
+        background: rgb(48, 48, 48, 0.92);
+        margin: 0 6px;
+    }
+    /*************************************** * ABOUT * ****************************************/
+    /*************************************** * SKILLZ * ***************************************/
+    .skillz2 img {
+        width: 9%;
+    }
+    .skillz-icon-inbetweens1 {
+        width: 5%;
+    }
+    .skillz-icon-sides1 {
+        width: 17.5%;
+    }
+    .skillz-icon-inbetweens2 {
+        width: 5%;
+    }
+    .skillz-icon-sides2 {
+        width: 24.5%;
+    }
+    /*************************************** * SKILLZ * ***************************************/
+    /************************************** * PROJECTS * **************************************/
+    .projects {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: row wrap;
+    }
+    .desktop-fix-projects {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: row wrap;
+    }
+    .desktop-fix-projects h2 {
+        width: 100%;
+    }
+    .projects-borders {
+        width: 85%
+    }
+    /************************************** * PROJECTS * **************************************/
+    /************************************** * CONTACT * ***************************************/
+    .contact-content {
+        align-items: auto;
+    }
+    .contact-content .half {
+        width: 40%;
+        text-align: center;
+    }
+    .desk-contact-fix {
+        width: 10%;
+        background: #1f1f1ff2;
+    }
+    /************************************** * CONTACT * ***************************************/
 }
 
-/************************************** * CONTACT * ***************************************/
-
-}
 @media only screen and (min-width: 1600px) {
-/*************************************** * SKILLZ * ***************************************/
-.skillz2 img{
-    width:6.5%;    
+    /*************************************** * SKILLZ * ***************************************/
+    .skillz2 img {
+        width: 6.5%;
+    }
+    .skillz-icon-inbetweens1 {
+        width: 6%;
+    }
+    .skillz-icon-sides1 {
+        width: 21.75%;
+    }
+    .skillz-icon-inbetweens2 {
+        width: 5%;
+    }
+    .skillz-icon-sides2 {
+        width: 29.5%;
+    }
+    /*************************************** * SKILLZ * ***************************************/
 }
-.skillz-icon-inbetweens1{
-    width: 6%;
-}
-.skillz-icon-sides1{
-    width:21.75%;
-}
-.skillz-icon-inbetweens2{
-    width: 5%;
-}
-.skillz-icon-sides2{
-    width:29.5%;
-}
-/*************************************** * SKILLZ * ***************************************/
-
-}
-
-
-
-
-
-
 
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+
 
 /*
  * Hide visually and from screen readers
@@ -912,8 +1055,9 @@ footer p{
 
 .hidden,
 [hidden] {
-  display: none !important;
+    display: none !important;
 }
+
 
 /*
  * Hide only visually, but have it available for screen readers:
@@ -925,17 +1069,18 @@ footer p{
  */
 
 .sr-only {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    /* 1 */
 }
+
 
 /*
  * Extends the .sr-only class to allow the element
@@ -945,22 +1090,24 @@ footer p{
 
 .sr-only.focusable:active,
 .sr-only.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto;
 }
+
 
 /*
  * Hide visually and from screen readers, but maintain layout
  */
 
 .invisible {
-  visibility: hidden;
+    visibility: hidden;
 }
+
 
 /*
  * Clearfix: contain floats
@@ -976,13 +1123,14 @@ footer p{
 
 .clearfix::before,
 .clearfix::after {
-  content: " ";
-  display: table;
+    content: " ";
+    display: table;
 }
 
 .clearfix::after {
-  clear: both;
+    clear: both;
 }
+
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
@@ -991,15 +1139,16 @@ footer p{
    ========================================================================== */
 
 @media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+    /* Style adjustments for viewports that meet the condition */
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
 }
+
 
 /* ==========================================================================
    Print styles.
@@ -1008,71 +1157,60 @@ footer p{
    ========================================================================== */
 
 @media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
-
-  abbr[title]::after {
-    content: " (" attr(title) ")";
-  }
-
-  /*
+    *,
+    *::before,
+    *::after {
+        background: #fff !important;
+        color: #000 !important;
+        /* Black prints faster */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+    a[href]::after {
+        content: " (" attr(href) ")";
+    }
+    abbr[title]::after {
+        content: " (" attr(title) ")";
+    }
+    /*
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
    */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
-  }
-
-  pre {
-    white-space: pre-wrap !important;
-  }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
-  /*
+    a[href^="#"]::after,
+    a[href^="javascript:"]::after {
+        content: "";
+    }
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    /*
    * Printing Tables:
    * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
    */
-  thead {
-    display: table-header-group;
-  }
-
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
+    thead {
+        display: table-header-group;
+    }
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
 }
-
