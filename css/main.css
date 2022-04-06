@@ -19,6 +19,7 @@ html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+    scroll-behavior: smooth;
 }
 
 
@@ -165,10 +166,6 @@ body {
 
 /*************************************** * HEADER * ***************************************/
 
-.non-mobile {
-    display: hidden;
-}
-
 header {
     display: flex;
     align-items: center;
@@ -201,7 +198,7 @@ header {
 .logo {
     width: 100%;
     display: flex;
-    align-items: auto;
+    align-items: stretch;
     justify-content: center;
     flex-flow: row wrap;
 }
@@ -236,7 +233,7 @@ nav {
     width: 100%;
     list-style-type: none;
     display: flex;
-    align-items: auto;
+    align-items: stretch;
     justify-content: center;
     flex-flow: row wrap;
     margin: 0;
@@ -305,6 +302,7 @@ nav {
 .about p {
     text-align: justify;
     text-justify: inter-word;
+    line-height: 25px;
 }
 
 .about .half {
@@ -389,7 +387,7 @@ nav {
 .skillz-pngs {
     width: 100%;
     display: flex;
-    align-items: auto;
+    align-items: stretch;
     justify-content: center;
     flex-flow: row wrap;
     margin: 0px 6px;
@@ -486,14 +484,15 @@ nav {
 }
 
 .unplugged {
-    border: 2px solid darkgreen;
+    border: 2px solid rgb(80, 201, 80);
     background-image: url(../img/unplugged-retreat.jpg);
     background-position: center;
     background-size: cover;
 }
 
 .unplugged a {
-    color: darkgreen;
+    color: rgb(80, 201, 80);
+    ;
 }
 
 .guess {
@@ -520,7 +519,7 @@ nav {
 
 .gallery {
     border: 2px solid pink;
-    background-image: url(../img/gallery.jpg);
+    background-image: url(../img/gallery.png);
     background-position: center;
     background-size: cover;
 }
@@ -531,11 +530,15 @@ nav {
 
 .project h3 {
     text-align: center;
+    padding: 0 8px;
 }
 
 .project p {
     text-align: center;
     margin: 5%;
+    line-height: 25px;
+    background: rgb(31, 31, 31, 0.80);
+    border-radius: 5px 5px;
 }
 
 .project article {
@@ -606,7 +609,7 @@ nav {
 
 .follow-icons {
     display: flex;
-    align-items: auto;
+    align-items: stretch;
     justify-content: center;
     flex-flow: row wrap;
     width: 100%;
@@ -642,7 +645,6 @@ nav {
     margin: 0;
     height: 10px;
     color: rgb(48, 48, 48, 0.92);
-    ;
 }
 
 .icon img:hover {
@@ -699,7 +701,7 @@ footer p {
     .about-top {
         background-color: rgb(48, 48, 48, 0.92);
         width: 100%;
-        height: 54px;
+        height: 32px;
         margin: 0 6px;
     }
     .about .half2 {
@@ -710,9 +712,10 @@ footer p {
         border: 3px solid greenyellow;
         max-width: 40%;
         max-height: 350px;
-        height: auto;
+        height: stretch;
         border-radius: 15px 15px;
         margin-bottom: 30px;
+        margin-top: 22px;
     }
     .about .half1 {
         display: flex;
@@ -726,12 +729,9 @@ footer p {
     }
     .half1-text p {
         text-justify: none;
-        padding-right: 5px;
+        margin-right: 25px;
     }
-    .about h1 {
-        margin: 0;
-        padding: 0;
-    }
+    .about h1 {}
     .about-bellow {
         width: 100%;
         height: 24px;
@@ -759,7 +759,7 @@ footer p {
     .skillz2 .skillz-pngs1 {
         width: 100%;
         display: flex;
-        align-items: auto;
+        align-items: stretch;
         justify-content: center;
         flex-flow: row wrap;
         margin: 0 6px;
@@ -786,7 +786,7 @@ footer p {
     .skillz2 .skillz-pngs2 {
         width: 100%;
         display: flex;
-        align-items: auto;
+        align-items: stretch;
         justify-content: center;
         flex-flow: row wrap;
         margin: 0 6px;
@@ -823,14 +823,8 @@ footer p {
     .project {
         width: 40%;
     }
-    .top-part {
-        flex-flow: column;
-    }
     .project a {
-        width: 40%;
         text-align: center;
-        border-radius: 4px 4px;
-        background-color: rgb(31, 31, 31, 0.5);
     }
     .desktop-fix-projects {
         margin: 0 6px;
@@ -861,7 +855,7 @@ footer p {
         width: 100%;
         margin: 0 6px;
         display: flex;
-        align-items: auto;
+        align-items: stretch;
         justify-content: center;
         flex-flow: row wrap;
     }
@@ -878,7 +872,7 @@ footer p {
     }
     .contact-content .half2 {
         display: flex;
-        align-items: auto;
+        align-items: stretch;
         justify-content: center;
         flex-flow: row wrap;
     }
@@ -1010,7 +1004,7 @@ footer p {
     /************************************** * PROJECTS * **************************************/
     /************************************** * CONTACT * ***************************************/
     .contact-content {
-        align-items: auto;
+        align-items: stretch;
     }
     .contact-content .half {
         width: 40%;
