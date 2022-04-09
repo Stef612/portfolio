@@ -276,11 +276,6 @@ nav {
     background: #1f1f1ff2;
 }
 
-.nav-icon img:hover {
-    transition-duration: 0.25s;
-    background: white
-}
-
 
 /*************************************** * HEADER * ***************************************/
 
@@ -696,6 +691,10 @@ footer p {
     .bottom-nav {
         height: 24px;
     }
+    .nav-icon img:hover {
+        transition-duration: 0.25s;
+        background: white
+    }
     /*************************************** * HEADER * ***************************************/
     /*************************************** * ABOUT * ****************************************/
     .about-top {
@@ -765,11 +764,11 @@ footer p {
         margin: 0 6px;
     }
     .skillz2 img {
-        width: 12.5%;
+        width: 10%;
         opacity: 95%;
     }
     .skillz-icon-inbetweens1 {
-        width: 5%;
+        width: 8.125%;
         background: #1f1f1ff2;
         ;
     }
@@ -792,11 +791,11 @@ footer p {
         margin: 0 6px;
     }
     .skillz-icon-inbetweens2 {
-        width: 5%;
+        width: 8%;
         background: #1f1f1ff2;
     }
     .skillz-icon-sides2 {
-        width: 17.5%;
+        width: 18%;
         background: #1f1f1ff2;
     }
     .skillz2 .skillz-padding {
@@ -965,19 +964,19 @@ footer p {
     /*************************************** * ABOUT * ****************************************/
     /*************************************** * SKILLZ * ***************************************/
     .skillz2 img {
-        width: 9%;
+        width: 7%;
     }
     .skillz-icon-inbetweens1 {
-        width: 5%;
+        width: 7.5%;
     }
     .skillz-icon-sides1 {
         width: 17.5%;
     }
     .skillz-icon-inbetweens2 {
-        width: 5%;
+        width: 7%;
     }
     .skillz-icon-sides2 {
-        width: 24.5%;
+        width: 25.5%;
     }
     /*************************************** * SKILLZ * ***************************************/
     /************************************** * PROJECTS * **************************************/
@@ -1020,16 +1019,16 @@ footer p {
 @media only screen and (min-width: 1600px) {
     /*************************************** * SKILLZ * ***************************************/
     .skillz2 img {
-        width: 6.5%;
+        width: 5%;
     }
     .skillz-icon-inbetweens1 {
-        width: 6%;
+        width: 7.875%;
     }
     .skillz-icon-sides1 {
         width: 21.75%;
     }
     .skillz-icon-inbetweens2 {
-        width: 5%;
+        width: 7%;
     }
     .skillz-icon-sides2 {
         width: 29.5%;
